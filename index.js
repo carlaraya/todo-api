@@ -1,13 +1,15 @@
 const app = require('express')();
+const formidable = require('express-formidable');
 const routes = require('./routes');
 const tasksRoutes = require('./routes/tasks');
 
-var mongoose = require('mongoose');
-var mongoDB = process.env.TODODB;
+const mongoose = require('mongoose');
+const mongoDB = process.env.TODO_DB;
 mongoose.connect(mongoDB, { useNewUrlParser: true });
-var db = mongoose.connection;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
+app.use(formidable());
 app.use('/', routes);
 app.use('/tasks', tasksRoutes);
 

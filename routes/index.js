@@ -1,7 +1,7 @@
 const routes = require('express').Router();
 
 routes.get('/', (req, res) => {
-  res.status(200).json({ message: 'Connected!' });
+  res.status(200).json({ message: 'Welcome to my API!' });
 });
 
 module.exports = routes;
