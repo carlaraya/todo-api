@@ -1,5 +1,7 @@
 # TODO API Documentation
-The app is hosted in [https://devcamp1819b.herokuapp.com/](https://devcamp1819b.herokuapp.com/).
+Code: [https://github.com/carlaraya/todo-api](https://github.com/carlaraya/todo-api)
+
+Server: [https://devcamp1819b.herokuapp.com/](https://devcamp1819b.herokuapp.com/)
 
 ## Task Model Fields
 
