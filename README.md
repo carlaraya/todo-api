@@ -2,14 +2,15 @@
 The app is hosted in [https://devcamp1819b.herokuapp.com/](https://devcamp1819b.herokuapp.com/).
 
 ## Task Model Fields
-1. name
-    * The task name. Type of String. Required when creating.
-2. done
-    * Whether a task is done or not. Type of Boolean. Optional when creating (Default to zero).
-3. notes
-    * Task notes. Type of String. Required when creating.
-4. priority
-    * The priority of current task. Type of Integer. Required when creating.
+
+| Field     | Description                         | Type    | Required when creating?      |
+|-----------|-------------------------------------|---------|------------------------------|
+| name      | The task name                       | String  | Yes                          |
+| done      | Whether a task is done or not       | Boolean | No (defaults to false)       |
+| notes     | Notes about the task                | String  | No                           |
+| priority  | Priority of the task                | Number  | Yes                          |
+| createdAt | Timestamp when task is created      | Date    | No (automatically generated) |
+| updatedAt | Timestamp when task is last updated | Date    | No (automatically generated) |
 
 ## API Endpoints
 

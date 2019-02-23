@@ -1,7 +1,7 @@
 const routes = require('express').Router();
 const showdown = require('showdown');
 const fs = require('fs');
-const converter = new showdown.Converter({completeHTMLDocument: true});
+const converter = new showdown.Converter({completeHTMLDocument: true, tables: true});
 converter.setFlavor('github');
 
 routes.get('/', (req, res) => {
