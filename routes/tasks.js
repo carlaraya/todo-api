@@ -37,6 +37,7 @@ routes.get('/:id', (req, res) => {
 routes.post('/', (req, res) => {
   console.log(req.fields);
   var task = new Task(req.fields);
+  debugger;
   task.save(function(err, saveResult) {
     if (err) res.send(err);
     res.json(saveResult);
