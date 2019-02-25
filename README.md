@@ -33,10 +33,10 @@ Server: [https://devcamp1819b.herokuapp.com/](https://devcamp1819b.herokuapp.com
 * Get task by id
 
 ### POST /tasks/
-* Create new task, with model specified above passed as form fields.
+* Create new task, with model specified above passed as form fields. Response contains the newly-created task, including automatically-generated fields.
 
 ### PATCH /tasks/:id
-* Edit task by id, with edits passed as form fields.
+* Edit task by id, with edits passed as form fields. Response contains the newly-edited task.
 
 ### DELETE /tasks/:id
-* Delete task by id.
+* Delete task by id. Response contains the deleted task.
