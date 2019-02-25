@@ -7,6 +7,7 @@ Server: [https://devcamp1819b.herokuapp.com/](https://devcamp1819b.herokuapp.com
 
 | Field     | Description                         | Type    | Required when creating?      |
 |-----------|-------------------------------------|---------|------------------------------|
+| _id       | The task's unique id                | String  | No (automatically generated) |
 | name      | The task name                       | String  | Yes                          |
 | done      | Whether a task is done or not       | Boolean | No (defaults to false)       |
 | notes     | Notes about the task                | String  | No                           |
